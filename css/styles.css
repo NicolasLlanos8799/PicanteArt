@@ -11344,7 +11344,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 /* Agregamos estilos específicos para dispositivos móviles */
 @media (max-width: 767px) {
   .video-section {
-      min-height: 200px; /* Establecemos una altura mínima más pequeña para móviles */
+      height: auto; /* Establecemos una altura mínima más pequeña para móviles */
   }
 }
 
