@@ -603,7 +603,6 @@ progress {
   max-width: 100%;
   height: auto;
 }
-
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -11064,7 +11063,7 @@ header.masthead .masthead-heading {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  width: 1rem;
+  width: 3rem;
   height: 3rem;
   cursor: pointer;
   background-color: transparent;
@@ -11315,5 +11314,51 @@ section#contact form#contactForm :-ms-input-placeholder {
 .footer {
   text-align: center;
   font-size: 0.9rem;
+  background-color: black;
+  color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/* Your existing CSS styles... */
+
+/* Style for the video section */
+.video-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+
+  /* Añadimos las siguientes propiedades para evitar problemas en dispositivos móviles */
+  min-height: 300px; /* Establecemos una altura mínima para el contenedor del video */
+}
+
+.video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Agregamos estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+  .video-section {
+      min-height: 200px; /* Establecemos una altura mínima más pequeña para móviles */
+  }
+}
+
+
+/* Adjust the size of the images and their container */
+.portfolio-item {
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Your other CSS styles... */
+
