@@ -3734,7 +3734,7 @@ textarea.form-control-lg {
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
-  --bs-navbar-brand-margin-end: 1rem;
+  --bs--margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
@@ -10913,15 +10913,15 @@ p {
     padding-bottom: 1.5rem;
     border: none;
     background-color: transparent;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    
   }
   #mainNav .navbar-brand {
     font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
+    
   }
   #mainNav .navbar-brand img {
     height: 2rem;
-    transition: height 0.3s ease-in-out;
+    
   }
   #mainNav.navbar-shrink {
     padding-top: 1rem;
@@ -11357,6 +11357,25 @@ section#contact form#contactForm :-ms-input-placeholder {
 .portfolio-item img {
     width: 100%;
     height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -70px;
+}
+
+.navbar-logo {
+  width: auto;
+  height: 180px;
 }
 
 /* Your other CSS styles... */
