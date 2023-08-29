@@ -1,3 +1,1 @@
-# PicanteArt
-# evaart
 # evaart
