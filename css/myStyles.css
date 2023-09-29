@@ -72,3 +72,34 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+.respeto-respetan {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    line-height: 1.1;
+    font-size: 50px;
+    margin-top: -90px;
+}
+
+.music {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los carruseles uniformemente */
+    flex-wrap: wrap; /* Permite que los carruseles se envuelvan en filas si no caben en la pantalla */
+}
+
+.carousel {
+    flex: 0 0 calc(33.33% - 10px); /* Ancho de cada carrusel (ajusta según tus necesidades) */
+    margin-right: 10px; /* Espacio entre los carruseles */
+}
+
+/* Estilos adicionales para los carruseles según sea necesario */
+
