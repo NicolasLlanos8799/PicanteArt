@@ -11,6 +11,19 @@
   /* Establecemos una altura mínima para el contenedor del video */
 }
 
+.video2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  object-fit: none;
+  /* Adjust the height as needed */
+
+  /* Añadimos las siguientes propiedades para evitar problemas en dispositivos móviles */
+  min-height: 300px;
+  /* Establecemos una altura mínima para el contenedor del video */
+}
+
+
 
 /* Adjust the size of the images and their container */
 .portfolio-item {
@@ -92,6 +105,17 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 13px;
     margin-bottom: 20px;
+  }
+  .video2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    /* Adjust the height as needed */
+  
+    /* Añadimos las siguientes propiedades para evitar problemas en dispositivos móviles */
+    min-height: 300px;
+    /* Establecemos una altura mínima para el contenedor del video */
   }
   
 }
