@@ -118,6 +118,22 @@ body {
     min-height: 300px;
     /* Establecemos una altura mínima para el contenedor del video */
   }
+
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(23 22 22 / 70%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
   
 }
 
