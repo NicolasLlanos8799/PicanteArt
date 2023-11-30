@@ -42,32 +42,20 @@
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
-            <!-- Texto a la izquierda y arriba del video -->
+            <!-- VIDEO 1  -->
             <div>
                 <div class="custom-video-container">
-                    <video id="custom-video" class="video" autoplay loop playsinline style="width: 100%; height: auto; object-fit: cover;" onclick="togglePlayPause()">
-                        <source src="assets/img/publicacion001/BleedingWallsAndBrokenHeart.mp4" type="video/mp4">
+                    <video id="custom-video-2" class="video" autoplay loop playsinline style="width: 100%; height: auto; object-fit: cover;" onclick="togglePlayPause('custom-video-2')">
+                        <source src="assets/img/publicacion005/LAS CHAPAS.mp4" type="video/mp4">
                     </video>
-                    <button id="play-button" class="play-button rotating" onclick="togglePlayPause()">CLICK <br> ME!</button>
+                    <button class="play-button rotating" onclick="togglePlayPause('custom-video-2')">CLICK <br> ME!</button>
                 </div>
-        
-                <div class="rectangulo-gris">
-                    <p class="los-boulevares">30/03/2022 “Los Boulevares”</p>
-                    <p class="music">
-                        Music by
-                        <a style="color: white;" href="https://soundcloud.com/marketpleiss" target="_blank">Marketpleiss</a>
-                    </p>
-                </div>
-                
-                
-                
             </div>
-
             <!-- Carruseles -->
             <div class="carousel-container">
 
                 <!-- Carrusel 2 -->
-                 <div class="carousel-container">
+                 <div class="carousel-container" style="margin-top: 12px;">
                     <div id="carouselExample2" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExample2" data-slide-to="0" class="active"></li>
@@ -96,8 +84,25 @@
                     </div>
                 </div>
 
+                <div>
+                    <div class="custom-video-container" style="margin-top: -65px;">
+                        <video id="custom-video-1" class="video" autoplay loop playsinline style="width: 100%; height: auto; object-fit: cover;" onclick="togglePlayPause('custom-video-1')">
+                            <source src="assets/img/publicacion001/BleedingWallsAndBrokenHeart.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-button rotating" onclick="togglePlayPause('custom-video-1')">CLICK <br> ME!</button>
+                    </div>
+                
+                    <div class="rectangulo-gris">
+                        <p class="los-boulevares">30/03/2022 “Los Boulevares”</p>
+                        <p class="music">
+                            Music by
+                            <a style="color: white;" href="https://soundcloud.com/marketpleiss" target="_blank">Marketpleiss</a>
+                        </p>
+                    </div>
+                </div>
+
                 <!-- Carrusel 3 -->
-                <div class="carousel">
+                <div class="carousel" style="margin-top: 10px;">
                     <div id="carouselExample3" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExample3" data-slide-to="0" class="active"></li>

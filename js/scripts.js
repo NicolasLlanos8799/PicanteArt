@@ -53,9 +53,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-function togglePlayPause() {
-    var video = document.getElementById('custom-video');
-    var playButton = document.getElementById('play-button');
+function togglePlayPause(videoId) {
+    var video = document.getElementById(videoId);
+    var playButton = video.parentElement.querySelector('.play-button');
 
     if (video.paused) {
         video.play();
@@ -66,13 +66,12 @@ function togglePlayPause() {
     }
 }
 
-var video = document.getElementById('custom-video');
-var playButton = document.getElementById('play-button');
+document.querySelectorAll('.custom-video-container video').forEach(function (video) {
+    video.addEventListener('play', function () {
+        video.parentElement.querySelector('.play-button').style.display = 'none';
+    });
 
-video.addEventListener('play', function () {
-    playButton.style.display = 'none';
-});
-
-video.addEventListener('pause', function () {
-    playButton.style.display = 'block';
+    video.addEventListener('pause', function () {
+        video.parentElement.querySelector('.play-button').style.display = 'block';
+    });
 });
